@@ -15,8 +15,8 @@ git clone https://github.com/TheMuppets/proprietary_vendor_xiaomi_munch vendor/x
 git clone https://github.com/TheMuppets/proprietary_vendor_xiaomi_sm8250-common vendor/xiaomi/sm8250-common; \
 git clone https://github.com/LineageOS/android_hardware_xiaomi hardware/xiaomi; \
 
-rm -rf vendor/evolution-priv && git clone https://github.com/Evolution-X/vendor_evolution-priv_keys-template vendor/evolution-priv/keys && cd vendor/evolution-priv/keys && ./keys.sh && cd ../../..; \
+rm -rf vendor/evolution-priv && git clone https://github.com/Evolution-X/vendor_evolution-priv_keys-template vendor/evolution-priv/keys && cd vendor/evolution-priv/keys && ./keys.sh && croot; \
 
-. build/envsetup.sh; \
+source build/envsetup.sh; \
 
 lunch lineage_munch-bp2a-user && m evolution
