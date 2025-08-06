@@ -1,10 +1,11 @@
 #! /bin/bash
 
+croot; \
 rm -rf .repo/local_manifests; \
 
 repo init -u https://github.com/AxionAOSP/android.git -b lineage-23.0 --git-lfs; \
 
-/opt/crave/resync.sh; \
+repo sync; \
 
 rm -rf device/xiaomi/munch && rm -rf device/xiaomi/sm8250-common && rm -rf kernel/xiaomi/sm8250 && rm -rf vendor/xiaomi/munch && rm -rf vendor/xiaomi/sm8250-common && rm -rf hardware/xiaomi; \
 
@@ -20,4 +21,5 @@ git clone https://github.com/LineageOS/android_hardware_xiaomi hardware/xiaomi; 
 gk -s; \
 
 axion munch va; \
-ax -br -j$(nproc)
+axionSync; \
+ax -br -j$(nproc); \
