@@ -2,7 +2,7 @@
 
 rm -rf .repo/local_manifests; \
 
-repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs; \
+repo init -u https://github.com/AxionAOSP/android.git -b lineage-23.0 --git-lfs; \
 
 /opt/crave/resync.sh; \
 
@@ -17,4 +17,4 @@ git clone https://github.com/LineageOS/android_hardware_xiaomi hardware/xiaomi; 
 
 . build/envsetup.sh; \
 
-brunch munch
+axion munch va && ax -br -j$(nproc)
