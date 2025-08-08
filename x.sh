@@ -2,7 +2,7 @@
 
 rm -rf .repo/local_manifests; \
 
-repo init -u https://github.com/AxionAOSP/android.git -b lineage-23.0 --git-lfs; \
+repo init -u https://github.com/AxionAOSP/android.git -b lineage-22.2 --git-lfs; \
 
 /opt/crave/resync.sh; \
 
@@ -16,5 +16,5 @@ git clone https://github.com/TheMuppets/proprietary_vendor_xiaomi_sm8250-common 
 git clone https://github.com/LineageOS/android_hardware_xiaomi hardware/xiaomi; \
 
 . build/envsetup.sh; \
-
-axion munch va && ax -br -j$(nproc)
+gk -s; \
+axion munch gms pico && ax -br -j$(nproc)
