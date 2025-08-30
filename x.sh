@@ -17,4 +17,6 @@ git clone https://github.com/LineageOS/android_hardware_xiaomi hardware/xiaomi; 
 
 . build/envsetup.sh; \
 
+rm -rf vendor/evolution-priv/keys && git clone https://github.com/Evolution-X/vendor_evolution-priv_keys-template vendor/evolution-priv/keys && cd vendor/evolution-priv/keys && ./keys.sh; \
+
 lunch lineage_munch-bp1a-user && m evolution
