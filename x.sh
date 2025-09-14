@@ -15,6 +15,9 @@ git clone https://github.com/TheMuppets/proprietary_vendor_xiaomi_munch vendor/x
 git clone https://github.com/TheMuppets/proprietary_vendor_xiaomi_sm8250-common vendor/xiaomi/sm8250-common; \
 git clone https://github.com/LineageOS/android_hardware_xiaomi hardware/xiaomi; \
 
+rm -rf vendor/lineage; \
+git clone https://github.com/Niko-Bellic-69/avc vendor/lineage; \
+
 . build/envsetup.sh; \
 
 brunch munch
