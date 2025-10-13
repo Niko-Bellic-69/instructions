@@ -13,7 +13,7 @@ git clone https://github.com/Niko-Bellic-69/android_device_xiaomi_sm8250-common 
 git clone https://github.com/LineageOS/android_kernel_xiaomi_sm8250 kernel/xiaomi/sm8250; \
 git clone https://github.com/TheMuppets/proprietary_vendor_xiaomi_munch vendor/xiaomi/munch; \
 git clone https://github.com/Niko-Bellic-69/proprietary_vendor_xiaomi_sm8250-common vendor/xiaomi/sm8250-common; \
-git clone https://github.com/LineageOS/android_hardware_xiaomi hardware/xiaomi; \
+git clone https://github.com/Evolution-X-Devices/hardware_xiaomi -b bka-no-dolby hardware/xiaomi; \
 
 rm -rf device/qcom/wfd && git clone https://github.com/Evolution-X-Devices/device_qcom_wfd device/qcom/wfd; \
 
