@@ -11,7 +11,7 @@ rm -rf out/target/product/munch && rm -rf device/xiaomi/munch && rm -rf device/x
 git clone https://github.com/Niko-Bellic-69/android_device_xiaomi_munch device/xiaomi/munch; \
 git clone https://github.com/Niko-Bellic-69/android_device_xiaomi_sm8250-common device/xiaomi/sm8250-common; \
 git clone https://github.com/LineageOS/android_kernel_xiaomi_sm8250 kernel/xiaomi/sm8250; \
-git clone https://github.com/Niko-Bellic-69/proprietary_vendor_xiaomi_munch vendor/xiaomi/munch; \
+git clone https://github.com/TheMuppets/proprietary_vendor_xiaomi_munch vendor/xiaomi/munch; \
 git clone https://github.com/Niko-Bellic-69/proprietary_vendor_xiaomi_sm8250-common vendor/xiaomi/sm8250-common; \
 git clone https://github.com/LineageOS/android_hardware_xiaomi hardware/xiaomi; \
 
