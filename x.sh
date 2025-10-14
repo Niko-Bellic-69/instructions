@@ -16,6 +16,7 @@ git clone https://github.com/Niko-Bellic-69/proprietary_vendor_xiaomi_sm8250-com
 git clone https://github.com/Evolution-X-Devices/hardware_xiaomi -b bka-no-dolby hardware/xiaomi; \
 
 rm -rf device/qcom/wfd && git clone https://github.com/Evolution-X-Devices/device_qcom_wfd device/qcom/wfd; \
+rm -rf vendor/qcom/wfd && git clone https://github.com/Evolution-X-Devices/vendor_qcom_wfd vendor/qcom/wfd; \
 
 . build/envsetup.sh; \
 
